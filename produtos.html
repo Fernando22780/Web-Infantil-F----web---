@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Produtos</title>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <header class="max-width bg" id="Home">
+        <div class="container">
+            <nav class="menu">
+                <h1 class="logo-text">PrincesinhaModa</h1>
+             
+                <div class="carrinho">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-quantidade">0</span>
+                </div>
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="index.html#Home">Início</a></li>
+                        <li><a href="produtos.html">Nossos Produtos</a></li>
+                        <li><a href="adicionar.html" target="_blank">Adicionar Roupa</a></li>
+                        <li><a href="index.html#Contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="index.html#Home">Início</a></li>
+                        <li><a href="produtos.html">Nossos Produtos</a></li>
+                        <a href="adicionar.html" target="_blank">Adicionar Roupa</a>
+
+                        <li><a href="index.html#Contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="max-width bg2" id="Produtos">
+        <div class="container">
+            <div class="titulo">
+                <h2 class="text-md color-cinza-1">Nossos Produtos</h2>
+                <div class="line">
+                    <div class="text-titulo">Roupas Disponíveis</div>
+                </div>
+            </div>
+
+            
+            <div class="produto">
+                <img src="image/conjuntinho 01.webp" alt="Conjuntinho Simples para Verão">
+                <h3>Conjuntinho </h3>
+                <p>Tamanho: P </p>
+                <p>Preço: R$ 115,25</p>
+                <p>"Conjunto descontraído para instantes animados</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img src="image/01 novo conjuntinho.jpg" alt="Nome da Peça 2">
+                <h3>Conjuntinho</h3>
+                <p>Tamanho: M</p>
+                <p>Preço: R$ 123,99</p>
+                <p>Combo casual para momentos divertidos</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+
+           
+           <div class="produto">
+            <img src="image/conjutinho 03.webp" alt="Nome da Peça 3">
+            <h3>Conjuntinho</h3>
+            <p>Tamanho: P</p>
+            <p>Preço: R$ 131,99</p>
+            <p>Combo casual para momentos divertidos</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+
+        
+        <div class="produto">
+            <img src="image/conjutinho 04.webp" alt="Nome da Peça 4">
+            <h3>Conjuntinho</h3>
+            <p>Tamanho: P</p>
+            <p>Preço: R$ 91,00</p>
+            <p>Combo casual para momentos divertidos</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+
+        
+        <div class="produto">
+            <img src="image/roupas disponiveis 06.jpg" alt="Nome da Peça 8">
+            <h3>Conjuntinho</h3>
+            <p>Tamanho: M</p>
+            <p>Preço: R$ 121,99</p>
+            <p>Combo casual para momentos divertidos</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+
+        
+        <div class="produto">
+            <img src="image/conjutinho saia.webp" alt="Nome da Peça 9">
+            <h3>Conjuntinho</h3>
+            <p>Tamanho: M</p>
+            <p>Preço: R$ 141,99</p>
+            <p>Esta encantadora saia é o complemento perfeito.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+
+        
+        <div class="produto">
+            <img src="image/07.webp" alt="Nome da Peça 10">
+            <h3>Conjuntinho</h3>
+            <p>Tamanho: P</p>
+            <p>Preço: R$ 141,99</p>
+            <p>Roupinha leve e cheia de estilo para passear</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        
+        
+        <div class="produto">
+            <img src="image/011.webp" alt="Nome da Peça 11">
+            <h3>Conjuntinho</h3>
+            <p>Tamanho: P</p>
+            <p>Preço: R$ 141,99</p>
+            <p>Roupinha leve para ficar em casa</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        
+    </div>
+</section>
+
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".add-to-cart").click(function(){
+                var quantidade = parseInt($(".carrinho-quantidade").text());
+                quantidade++;
+                $(".carrinho-quantidade").text(quantidade);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Roupa</title>
+    <link rel="stylesheet" href="adicionar.css">
+    
+</head>
+<body>
+    <h1>Adicionar Roupa</h1>
+    <form id="clothing-form">
+        <label for="clothing-name">Nome da Roupa:</label>
+        <input type="text" id="clothing-name" name="clothing-name" required>
+
+        <label for="clothing-size">Tamanho:</label>
+        <select id="clothing-size" name="clothing-size" required>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+        </select>
+
+        <label for="clothing-description">Descrição:</label>
+        <textarea id="clothing-description" name="clothing-description" required></textarea>
+
+        <label for="clothing-price">Preço:</label>
+        <input type="number" id="clothing-price" name="clothing-price" required>
+
+        <label for="clothing-image-url">URL da Imagem:</label>
+        <input type="text" id="clothing-image-url" name="clothing-image-url" required>
+
+        <button type="submit">Adicionar Roupa</button>
+    </form>
+    <div id="clothing-container"></div>
+    <script src="adicionar.js"></script>
+
+    <script>
+       
+    </script>
+</body>
+</html>
